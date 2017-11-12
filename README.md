@@ -20,6 +20,12 @@ $ sudo python arpwatch.py [-i interface]
 	-i : specify an interface to listen on
 ```
 
+### Examples
+```
+$ sudo python arpwatch.py
+$ sudo python arpwatch.py -i eth0
+```
+
 ### Description
 If an interface is not specified, use netifaces to get all possible interfaces and select the first one.
 
@@ -35,8 +41,11 @@ Performs a TCP SYN scan for any open ports for a given IP. For every open port, 
 $ sudo python synprobe.py [-p port_range] target
 	-p     : specify port range to be scanned
 	target : target server IP address
+```
 
-EXAMPLES:
+### Examples
+```
+$ sudo python synprobe.py
 $ sudo python synprobe.py -p 8080
 $ sudo python synprobe.py -p 20-25
 ```
